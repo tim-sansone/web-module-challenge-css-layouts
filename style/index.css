@@ -1,1 +1,205 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, p {
+    font-family: Lato, sans-serif;
+}
+
+/* ---------------- HEADER -------------------- */
+header {
+    height: 15vh;
+    background-image: linear-gradient(#a3cef1, #6096ba);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header h1 {
+    margin-left: 2em;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav {
+    width: 33%;
+    margin-left: 7em;
+    display:flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 3px;
+    margin: 0.5em;
+    background-image: linear-gradient(#e7ecef, #8b8c89);
+    padding: 0.5em 1.5em;
+}
+
+/* ------------------------ ABOUT ME ---------------------- */
+
+.about_me {
+    width: 80%;
+    margin: 2em auto;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.about_me img {
+    border-radius: 5px;
+}
+
+
+.about_me div {
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.about_me h2, footer h2 {
+    font-size: 2em;
+}
+
+.about_me a, .about_me p {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+}
+
+.about_me a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 3px;
+    border-radius: 5px;
+    background-image: linear-gradient(#a3cef1, #6096ba);
+    width: 3em;
+    padding: 0.5em 1.5em;
+}
+
+
+/* ------------------------ CONTENT ----------------------- */
+.content_row {
+    width:80%;
+    margin:0 auto 2em auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.project {
+    width: 25%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project p {
+    font-size: 1.4em;
+}
+
+/* --------------------------- FOOTER ------------------------ */
+
+footer {
+    height:15vh;
+    background-image: linear-gradient(#e7ecef, #8b8c89);
+    display:flex;
+    justify-content: space-around;
+}
+
+footer div {
+    width:30%;
+}
+
+footer h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em;
+}
+
+nav.social {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .like_me a {
+    text-align: center;
+} */
+
+.copyright {
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+.copyright p {
+margin: 1.5em;
+font-size: 1.2em;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 3px;
+    background-image: linear-gradient(#a3cef1, #6096ba);
+    width: 3em;
+    padding: 0.5em 1.5em;
+    margin-left: auto;
+}
