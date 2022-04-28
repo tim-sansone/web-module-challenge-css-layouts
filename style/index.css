@@ -1,54 +1,25 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    max-width: 100%;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+html {
+    font-size: 62.5%;
 }
 
 h1, h2, p, a {
     font-family: Lato, sans-serif;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 /* ---------------- HEADER -------------------- */
@@ -61,24 +32,24 @@ header {
 }
 
 header h1 {
-    margin-left: 2em;
-    font-size: 3em;
+    margin-left: 3%;
+    font-size: 4rem;
     font-weight: bold;
     font-style: italic;
 }
 
-nav {
+.header_nav {
     width: 33%;
-    margin-left: 7em;
+    margin-left: 4%;
     display:flex;
 }
 
-nav a {
+.header_nav a {
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
+    font-size: 2em;
     border-radius: 3px;
-    margin: 0.5em;
+    margin: 0.2em;
     background-image: linear-gradient(#e7ecef, #8b8c89);
     padding: 0.5em 1.5em;
 }
@@ -87,48 +58,56 @@ nav a {
 
 .about_me {
     width: 80%;
-    margin: 2em auto;
+    height: 30vh;
+    margin: auto;
     display:flex;
     justify-content: space-evenly;
 }
 
 .about_me img {
     border-radius: 5px;
+    width: 35%;
 }
 
 
 .about_me div {
-    width: 30%;
+    width: 35%;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-start;
 }
 
-.about_me h2, footer h2 {
-    font-size: 2em;
-}
-
-.about_me a, .about_me p {
-    margin-top: 1.5em;
-    font-size: 1.2em;
+.about_me h2 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .about_me a {
+    display: block;
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
+    font-size: 2rem;
     border-radius: 3px;
-    border-radius: 5px;
     background-image: linear-gradient(#a3cef1, #6096ba);
-    width: 3em;
     padding: 0.5em 1.5em;
+    margin-top: 1em;
 }
+
+.about_me p {
+    margin-top: 1em;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+
 
 
 /* ------------------------ CONTENT ----------------------- */
 .content_row {
     width:80%;
-    margin:0 auto 2em auto;
+    height: 30vh;
+    margin: auto;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
@@ -149,7 +128,8 @@ nav a {
 }
 
 .project p {
-    font-size: 1.4em;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 /* --------------------------- FOOTER ------------------------ */
@@ -166,20 +146,16 @@ footer div {
 }
 
 footer h2 {
-    font-size: 2em;
+    font-size: 3rem;
     text-align: center;
     margin: 0.5em;
 }
 
-nav.social {
+.social nav {
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
-/* .like_me a {
-    text-align: center;
-} */
 
 .copyright {
 display: flex;
@@ -189,18 +165,18 @@ align-items: flex-end;
 
 .copyright p {
 margin: 1.5em;
-font-size: 1.2em;
+font-size: 1.7rem;
 }
 
 
-footer a {
+.like_me a {
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
+    font-size: 2rem;
     border-radius: 3px;
     background-image: linear-gradient(#a3cef1, #6096ba);
-    width: 3em;
     padding: 0.5em 1.5em;
     display: block;
     margin: auto;
+    width: fit-content;
 }
